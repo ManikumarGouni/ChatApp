@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recycler_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cm" />
+
+    <TextView
+        android:id="@+id/user_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recycler_image"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/recycler_image"
+        android:text="Mango Technologies"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_display_name"
+        android:layout_below="@+id/user_display_name"
+        android:layout_marginTop="11dp"
+        android:text="Do what can you can!!"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/online"
+        android:layout_above="@+id/user_status"
+        android:layout_toStartOf="@+id/user_status"
+        android:layout_marginEnd="21dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

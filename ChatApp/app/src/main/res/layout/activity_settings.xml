@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="technologies.mango.com.chatapp.SettingsActivity">
+
+    <include
+        android:id="@+id/settings_appbar"
+        layout="@layout/app_bar_layout" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/settings_appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/cm" />
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/circleImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="31dp"
+        android:text="Display name"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:text="Hey There I am Using Mango Chat!!"
+        android:textSize="20sp"
+        android:layout_below="@+id/display_name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Change Profile" />
+
+    <Button
+        android:id="@+id/change_sts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="change status" />
+
+
+</RelativeLayout>
